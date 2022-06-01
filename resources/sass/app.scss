@@ -1,0 +1,21 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+
+
+/*----------------
+Frontend styles
+-----------------*/
+//default
+
+.router-link-active{
+	font-weight: 600;
+}
+
