@@ -3,16 +3,16 @@ import Router from 'vue-router'
 
 
 // Components
-import ExampleComponent from '../components/EC'
-import AboutUs from '../components/AboutUs'
+// import ExampleComponent from '../components/EC'
 
 
 
-/* ------------------
+/* ---------------------
 All imported pages start 
----------------------*/
+-----------------------*/
 
-import LoginPage from '../pages/login'
+import HomePage from '../pages/home';
+import TagList from '../pages/tags';
 
 /* ------------------
 All imported pages end 
@@ -24,14 +24,20 @@ Vue.use(Router)
 const routes = [
 	{
 	  path: '/',
-	  name: 'HelloWorld',
-	  component: ExampleComponent
+	  name: 'HomePage',
+	  component: HomePage
 	},
 	{
-	  path: '/about',
-	  name: 'AboutUS',
-	  component: AboutUs
+	  path: '/tags',
+	  name: 'Tags',
+	  component: TagList
 	}
+	//admin route
+	// {
+	// 	path: '/admin',
+	// 	name: 'dashbord',
+	// 	component: Dashboard
+	// }
 ]
 
 

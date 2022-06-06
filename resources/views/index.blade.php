@@ -16,15 +16,12 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/grid.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="App">
-        <header>
-            @include('layouts.headermenu')
-        </header>
-        <main class="mt-5">
-            <router-view></router-view>
-        </main>
+        <mainapp></mainapp>
     </div>
 
     <!-- Scripts -->

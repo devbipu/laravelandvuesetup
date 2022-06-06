@@ -11,14 +11,16 @@ const mix = require('laravel-mix');
  |
  */
 
- mix.webpackConfig({
-    stats: {
-        children: true,
-    },
-});
+// mix.webpackConfig({
+//     stats: {
+//         children: true,
+//     },
+// });
 
 mix.js('resources/js/app.js', 'public/js')
     .vue()
     .sass('resources/sass/app.scss', 'public/css');
 
+mix.copy('resources/css/main.css', 'public/css/main.css');
+mix.copy('resources/css/grid.css', 'public/css/');
 
